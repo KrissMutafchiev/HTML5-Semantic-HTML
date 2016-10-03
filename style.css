@@ -1,0 +1,1206 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background: #222;
+    background-image: -webkit-linear-gradient( #444, #222) !important;
+    background-image: -moz-linear-gradient( #444, #222 ) !important;
+    background-image: -ms-linear-gradient( #444, #222 ) !important;
+    background-image: -o-linear-gradient( #444, #222) !important;
+    background-image: linear-gradient( #444, #222) !important;
+}
+
+#loginUserForm {
+    display: none;
+}
+
+.ui-loading .ui-loader {
+    display: none;
+}
+
+.headerPage {
+    float: right;
+}
+
+.leftSide {
+    float: right;
+    text-shadow: 0 1px 0 #111;
+    -webkit-box-shadow: 0 0 12px rgba(0,0,0,.6);
+    -moz-box-shadow: 0 0 12px rgba(0,0,0,.6);
+    box-shadow: 0 0 12px rgba(0,0,0,.6);
+}
+
+img.iconNav {
+    margin: 0 auto;
+    width: inherit;
+    height: inherit;
+    max-width: 500px;
+}
+
+.icon-menu {
+    height: 100%;
+    float: left;
+}
+
+    .icon-menu > li {
+        padding: 0 !important;
+        width: 100%;
+    }
+
+.user-list {
+    height: 100%;
+    float: left;
+}
+
+.icon-menu li .ui-btn {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.logoImg {
+    width: inherit;
+    height: inherit;
+}
+
+.breakpointUsers {
+    overflow: hidden;
+}
+
+    .breakpointUsers .tabUsers {
+        width: 16.6% !important;
+        float: left !important;
+    }
+
+.tabDrones {
+    float: left;
+    width: 25%;
+}
+
+
+.popupList .contentStyle .ui-checkbox {
+    width: 14% !important;
+}
+
+/*Style header and left side*/
+.popupList,
+.headerStyle,
+.leftSide {
+    background: #222;
+    background-image: -webkit-linear-gradient( #444, #222);
+    background-image: -moz-linear-gradient( #444, #222 );
+    background-image: -ms-linear-gradient( #444, #222);
+    background-image: -o-linear-gradient( #444, #222 );
+    background-image: linear-gradient( #444, #222 );
+    border-color: #444;
+    color: #fff;
+}
+
+/*Style popup LIst */
+.popupList {
+    display: none;
+    top: 3.7em;
+    position: absolute;
+    border-width: 1px;
+    border-style: solid;
+    text-shadow: 0 1px 0 #111;
+    -webkit-box-shadow: 0 0 12px rgba(0,0,0,.6);
+    -moz-box-shadow: 0 0 12px rgba(0,0,0,.6);
+    box-shadow: 0 0 12px rgba(0,0,0,.6);
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-border-radius: .3125em;
+    border-radius: .3125em;
+}
+
+.headerStyle {
+    position: relative;
+    font-size: 1em;
+    min-height: 3.5em;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: 0 !important;
+    width: 100%;
+}
+
+    .headerStyle h3 {
+        position: absolute;
+        top:0;
+        left: 50%;
+    }
+
+.contentStyle {
+    padding: 0.5em;
+}
+
+.addUsers,
+.listOfUsers {
+    display: none;
+}
+
+.contentStyle .ui-btn,
+.popupUser .ui-btn,
+.ui-listview > .ui-li-divider,
+.ui-listview > li,
+input,
+.ui-mobile label {
+    font-size: 1em !important;
+}
+
+.ui-header .ui-btn {
+    font-size: 0.78em;
+}
+
+.tabUsers .ui-listview > .ui-li-static {
+    padding: 0 !important;
+}
+
+    .tabUsers .ui-listview > .ui-li-static .ui-btn {
+        margin: 0;
+    }
+
+    /*Description for user*/
+    .hideDescription {
+        margin: 0 4% !important;
+    }
+
+    .blockUsers{
+        width:31% !important;
+    }
+
+    .blockBase,
+    .blockDrone{
+        width:30% !important;
+        margin: 2.5% 2%;
+    }
+
+/*Adaptive */
+@media (max-width:768px) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 30%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    .headerPage {
+        width: 80%;
+    }
+
+    .leftSide {
+        width: 20%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 12%;
+    }
+
+    .popupList {
+        width: 78%;
+        left: 20.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 25%;
+    }
+
+    .user-list {
+        width: 75%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 15px;
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 760px) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 17%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 6px;
+    }
+}
+/* Smartphones (landscape) ----------- */
+@media screen and (max-device-width: 760px) and (orientation: landscape) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 16%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 6px;
+    }
+}
+/* Smartphones (portrait) ----------- */
+@media screen and (max-device-width: 320px) and (orientation: portrait) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 17%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 6px;
+    }
+}
+/*iphone 4/4s*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 17%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 7px;
+    }
+}
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 17%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 21%;
+    }
+
+    .user-list {
+        width: 79%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 7px;
+    }
+}
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 16%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 22%;
+    }
+
+    .user-list {
+        width: 78%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 7px;
+    }
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 17%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 8px;
+    }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 17%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 22%;
+    }
+
+    .user-list {
+        width: 78%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 8px;
+    }
+}
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .headerPage {
+        width: 72%;
+    }
+
+    .leftSide {
+        width: 28%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 16%;
+    }
+
+    .popupList {
+        width: 70%;
+        left: 28.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 22%;
+    }
+
+    .user-list {
+        width: 78%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 9px;
+    }
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 17%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 9px;
+    }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 17%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 9px;
+    }
+}
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 16%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 10px;
+    }
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 17%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 10px;
+    }
+}
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 17%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser {
+        font-size: 10px;
+    }
+}
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 16%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 11px;
+    }
+}
+
+/* ----------- iPad mini ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 17%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 12px;
+    }
+}
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 17%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 12px;
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .headerPage {
+        width: 72%;
+    }
+
+    .leftSide {
+        width: 28%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 16%;
+    }
+
+    .popupList {
+        width: 70%;
+        left: 28.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 22%;
+    }
+
+    .user-list {
+        width: 78%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 13px;
+    }
+}
+/* ----------- iPad 1 and 2 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 17%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUsere,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 17%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 12px;
+    }
+}
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .headerPage {
+        width: 72%;
+    }
+
+    .leftSide {
+        width: 28%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 16%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 28.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 22%;
+    }
+
+    .user-list {
+        width: 78%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 13px;
+    }
+}
+
+
+
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 17%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 12px;
+    }
+}
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .headerPage {
+        width: 70%;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 17%;
+    }
+
+    .popupList {
+        width: 68%;
+        left: 30.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 20%;
+    }
+
+    .user-list {
+        width: 80%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 12px;
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .headerPage {
+        width: 72%;
+    }
+
+    .leftSide {
+        width: 28%;
+    }
+
+    .headerPage .ui-grid-b .ui-block-a {
+        width: 16%;
+    }
+
+    .popupList {
+        width: 70%;
+        left: 28.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 22%;
+    }
+
+    .user-list {
+        width: 78%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 14px;
+    }
+}
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-device-width: 1024px) and (max-device-width: 1600px) {
+    .leftSide {
+        width: 20%;
+    }
+
+    .headerPage {
+        width: 80%;
+    }
+
+        .headerPage .ui-grid-b .ui-block-a {
+            width: 10%;
+        }
+
+    .popupList {
+        width: 78%;
+        left: 20.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 15%;
+    }
+
+    .user-list {
+        width: 85%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 15px;
+    }
+}
+/* Large screens ----------- */
+@media only screen and (min-width : 1600px) {
+    .leftSide {
+        width: 20%;
+    }
+
+    .headerPage {
+        width: 80%;
+    }
+
+        .headerPage .ui-grid-b .ui-block-a {
+            width: 12%;
+        }
+
+    .popupList {
+        width: 78%;
+        left: 20.5%;
+    }
+    /*Size in Left Side*/
+    .icon-menu {
+        width: 15%;
+    }
+
+    .user-list {
+        width: 85%;
+    }
+
+    .contentStyle,
+    .leftSide,
+    .popupUser,
+    .headerPage .ui-grid-b .ui-block-a,
+    .headerPage .ui-grid-b .ui-block-b,
+    .headerPage .ui-grid-b .ui-block-c {
+        font-size: 16px;
+    }
+}
+
+.ui-popup-screen {
+    display: none;
+}
