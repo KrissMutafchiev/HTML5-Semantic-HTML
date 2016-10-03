@@ -242,3 +242,5 @@ switch($command)
 	default:
 }
 ?>
+
+<!-- This file is updated -->
